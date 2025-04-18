@@ -30,11 +30,14 @@ First, make sure you have Python 3.7+ installed. Then:
 
 ```bash
 pip install openai
+```
+
 
 ## 🚀 Usage
 
 ```bash
 python zh_ja_translator.py
+```
 
 ## Sample
 请输入中文或日语:
