@@ -47,15 +47,15 @@ python zh_ja_translator.py
 
 
 ## Why Not Use Google Translate?
--Too many clicks: Selecting languages manually every time gets tedious.
--Lower-quality output: LLMs often produce translations with better context handling and more native phrasing.
--No customization: With LLMs, you can easily fine-tune the prompt for tone, formality, or purpose.
+- Too many clicks: Selecting languages manually every time gets tedious.
+- Lower-quality output: LLMs often produce translations with better context handling and more native phrasing.
+- No customization: With LLMs, you can easily fine-tune the prompt for tone, formality, or purpose.
 
 ## Future Plans
--GUI version using Tkinter or PyQt
--Save translation history
--Batch translation
--Voice input / speech-to-text
+- GUI version using Tkinter or PyQt
+- Save translation history
+- Batch translation
+- Voice input / speech-to-text
 -Web version with Streamlit or Flask
 
 
