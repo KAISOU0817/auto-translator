@@ -39,19 +39,27 @@ def detect_language(text):
 
 def translate(text):#you can also change the language to other languages
     lang = detect_language(text)
+
     if not lang:
         print("No texts, 文章がありません, 没有文本")
         return
     # Determine target languages
-    if lang == 'Japanese':
-        target = "Chinese and English"
-    elif lang == 'Chinese':
-        target = "Japanese and English"
-    else:
-        target = "Chinese and Japanese" 
+    all_langs = {"Chinese", "Japanese", "English"}
+    all_langs.remove(lang)
+    target_lang_1, target_lang_2 = list(all_langs)
 
     # Prepare the prompt for translation
-    prompt = f"translate the following {lang} text to {target}:\n{text}\n\n" 
+    # 改进后的 Prompt 示例
+    prompt = f"""
+    Please act as an expert translator. Translate the following source text into two target languages.
+    Provide the output in the exact format below, without any additional notes or explanations.
+
+    Source Language: {lang}
+    Source Text: "{text}"
+
+    {target_lang_1}:
+    {target_lang_2}:
+    """
 
     completion = client.chat.completions.create(
     model="qwen-plus", 
