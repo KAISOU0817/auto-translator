@@ -1,12 +1,18 @@
-# zh-ja-translator
+# auto-translator
 
-A minimal, powerful, and intelligent command-line translator between Chinese and Japanese, powered by Large Language Models (LLMs) such as OpenAI GPT or Qwen via OpenAI-compatible APIs.
+A minimal, powerful, and intelligent translator between English, Chinese and Japanese, powered by Large Language Models (LLMs) such as OpenAI GPT or Qwen via OpenAI-compatible APIs.
 
 ---
 
 ## 🌟 Why This Project?
 
-Most translation tools—Google Translate, DeepL, and even system-level translators—require you to manually select source and target languages. For people who switch frequently between only two languages (in this case, **Chinese** and **Japanese**), this is surprisingly inefficient.
+Conventional translation software and websites, while powerful, present a user experience flaw: they offer a vast selection of languages but require manual selection for every translation. This process is surprisingly inefficient for the average user. According to a UNESCO report, fewer than **3%** of the world's population speaks four or more languages, which means the vast majority of people operate within a small set of two or three.
+
+This data reflects my own experience as an international student in Japan, where I constantly switch between **Chinese, English, and Japanese**. My daily needs vary widely: translating my thoughts from Chinese to Japanese for assignments, looking up unfamiliar English words in Chinese while reading, or finding the original English source for a Japanese word written in Katakana. The repetitive, manual task of setting the source and target languages for each of these simple queries became a significant point of friction.
+
+To address this inefficiency, I developed this tool. It automatically detects the input language among the three and intelligently translates it into one of the other two, creating a seamless and efficient workflow for multilingual users like myself.
+
+
 
 ### ✨ Key Benefits:
 - **Smart Auto-Detection**: No need to specify the input language. Just paste your sentence in either Chinese or Japanese, and it gets translated to the other automatically.
@@ -36,11 +42,11 @@ pip install openai
 ## 🚀 Usage
 
 ```bash
-python zh_ja_translator.py
+python auto_translator.py
 ```
 
 ## Sample
-请输入中文或日语:
+Enter text to translate:
 我想去日本旅行。
 翻译结果：
 日本に旅行に行きたいです。
