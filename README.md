@@ -48,8 +48,10 @@ python auto_translator.py
 ## Sample
 Enter text to translate:
 我想去日本旅行。
+
 翻译结果：
 日本に旅行に行きたいです。
+I want to go on a trip to Japan.
 
 
 ## Why Not Use Google Translate?
