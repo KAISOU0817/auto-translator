@@ -1,10 +1,7 @@
 import os
 from openai import OpenAI
 
-client = OpenAI(
-    api_key="Add your API key here", #Please add your API key in " "
-    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"#In this case, I use Qwen's API
-)
+client = OpenAI()
 
 def detect_language(text):
 
