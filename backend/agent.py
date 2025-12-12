@@ -46,7 +46,6 @@ def translate(text):#you can also change the language to other languages
     target_lang_1, target_lang_2 = list(all_langs)
 
     # Prepare the prompt for translation
-    # 改进后的 Prompt 示例
     prompt = f"""
     Please act as an expert translator. Translate the following source text into two target languages.
     Provide the output in the exact format below, without any additional notes or explanations.
