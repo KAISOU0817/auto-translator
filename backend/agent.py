@@ -1,7 +1,12 @@
 import os
 from openai import OpenAI
+from langchain_core.pydantic_v1 import BaseModel, Field  
 
 client = OpenAI()
+
+class TranslatorAgent(BaseModel):
+    text: str = Field(..., description="The text to be translated")
+
 
 def detect_language(text):
 
